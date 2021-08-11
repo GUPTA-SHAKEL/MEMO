@@ -100,36 +100,22 @@ logo = """
 
 """
 
-CorrectUsername = "FAMOUS"
-
-CorrectPassword = "KING"
-
+CorrectUsername = 'FAMOUS'
+CorrectPassword = 'KING'
 loop = 'true'
-
-while (loop == 'true'):
-
-    username = raw_input("\033[1;91m[+] \033[1;91m \x1b[1;91mTool Username \x1b[1;91m: \x1b[1;97m")
-
-    if (username == CorrectUsername):
-
-    	password = raw_input("\033[1;91m[+] \033[1;91m \x1b[1;91mTool Password \x1b[1;91m: \x1b[1;97m")        if (password == CorrectPassword):
-
-            print "Logged in successfully as " + username #Dev:FAMOUS_KING
-
-	    time.sleep(2)
-
+while loop == 'true':
+    username = raw_input('\x1b[1;97m\xf0\x9f\x93\x8b \x1b[1;95mTool UserName\x1b[1;97m\xc2\xbb\xc2\xbb \x1b[1;97m')
+    if username == CorrectUsername:
+        password = raw_input('\x1b[1;97m\xf0\x9f\x97\x9d \x1b[1;95mTool Password\x1b[1;97m\xc2\xbb\xc2\xbb \x1b[1;97m')
+        if password == CorrectPassword:
+            print 'Logged in successfully as ' + username
+            time.sleep(2)
             loop = 'false'
-
         else:
-
-            print "\033[1;97mWrong Password"
-
+            print '\x1b[1;96mWrong Password'
             os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
-
     else:
-
-        print "\033[1;97mWrong Username"
-
+        print '\x1b[1;96mWrong Username'
         os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
 
 idh = []
